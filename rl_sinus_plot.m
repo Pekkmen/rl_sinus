@@ -1,8 +1,8 @@
-function rl_sinus_plot(agent)
+function rl_sinus_plot(agent, interval_start, interval_end)
     clc;
     close all
     
-    interval = linspace(0, 2*pi, 1000);
+    interval = linspace(interval_start, interval_end, 1000);
     expected_answers = zeros(1000);
 
     for i = 1:length(interval)
